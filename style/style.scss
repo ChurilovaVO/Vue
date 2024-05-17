@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+  min-height:100%;
+  background:
+    linear-gradient(#e6e6e6 0 0) calc(1*100%/5),
+    linear-gradient(#e6e6e6 0 0) calc(2*100%/5),
+    linear-gradient(#e6e6e6 0 0) calc(3*100%/5),
+    linear-gradient(#e6e6e6 0 0) calc(4*100%/5);
+  background-size: 1px 100%; /* Control the width here*/
+  background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type:none;
+}
+
+
+.center{
+    margin-left: calc(50% - 600px);
+    margin-right: calc(50% - 600px);
+}
+
+@import 'header';
+@import 'banner';
+@import 'project';
+@import 'counter';
+@import 'blog';
+@import 'footer';

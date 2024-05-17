@@ -1,0 +1,38 @@
+@import 'var';
+
+.header {
+    display: flex;
+    margin-top: 44px;
+    margin-bottom: 57px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__title{
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 125%;
+        color: #292f36;
+    }
+}
+
+.menubar{
+    display: flex;
+    gap: 50px;
+    &__link{
+        font-family:$font-family;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 125%;
+        text-align: center;
+        color: #292f36;
+        &:hover{
+            color: $colorSite;
+        }
+    }
+}
