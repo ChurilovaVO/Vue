@@ -33,7 +33,23 @@
         display: flex;
         flex-wrap: wrap;
         gap: 27px;
-    .blog__item{
+    .center__item{
+        box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25);
+        background: #f4f0ec;
+        .blog__element{
+          &_subcontent{
+            .blog__item_footer{
+                &_button{
+                    background-color: #fff;
+                }
+            }
+          
+        }
+        }
+    }
+}
+
+ .blog__item{
         border: 1px solid #e7e7e7;
         border-radius: 62px;
         padding: 21px;
@@ -118,18 +134,3 @@
             opacity: 0.8;     
         }
     }
-    .center__item{
-        box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25);
-        background: #f4f0ec;
-        .blog__element{
-          &_subcontent{
-            .blog__item_footer{
-                &_button{
-                    background-color: #fff;
-                }
-            }
-          
-        }
-        }
-    }
-}

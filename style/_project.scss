@@ -73,16 +73,7 @@
                     }
                 }
                 .subcontent__button{
-                    border-radius: 100%;
-                    fill: #f4f0ec; 
-                    width: 70px;   
-                    border: none; 
-                    &:hover{
-                        background-color: $colorSite; 
-                    }   
-                    &:active{
-                        transform: scale(0.95);
-                    }  
+                    
                 }
             }
             &:hover .project__item_img{
@@ -93,4 +84,18 @@
     }
 
     
+}
+
+.subcontent__button{
+    border-radius: 100%;
+    fill: #f4f0ec; 
+    width: 70px;
+    height: 70px;   
+    border: none; 
+    &:hover{
+        background-color: $colorSite; 
+    }   
+    &:active{
+        transform: scale(0.95);
+    }  
 }
