@@ -7,10 +7,6 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style-type: none;
-}
-
 .center {
   margin-left: calc(50% - 600px);
   margin-right: calc(50% - 600px);
@@ -382,6 +378,9 @@ li {
 .pages .footer__title {
   padding-bottom: 9px;
 }
+.pages .footer__nav {
+  list-style-type: none;
+}
 .pages .footer__nav_link .footer__text {
   line-height: 300%;
 }
@@ -581,4 +580,146 @@ li {
 .news_block .pagination .subcontent__button:hover {
   background-color: #f4f0ec;
   border: none;
+}
+
+.blog-content {
+  margin-top: 200px;
+  margin-bottom: 96px;
+  display: flex;
+  gap: 52px;
+}
+.blog-content .blog__details {
+  max-width: 804px;
+}
+.blog-content .blog__details_sort .sort__date {
+  margin-top: 47px;
+  margin-bottom: 47px;
+  display: flex;
+  gap: 409px;
+}
+.blog-content .blog__details_sort .sort__date_text {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #4d5053;
+}
+.blog-content .blog__details_quotes {
+  border-radius: 50px;
+  height: 267px;
+  background: #f4f0ec;
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 27px;
+}
+.blog-content .blog__details_quotes .quotes_icon {
+  font-family: "DM Serif Display", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #cda274;
+  transform: rotate(180deg);
+  height: 133px;
+  width: 106px;
+  position: absolute;
+  top: 50px;
+  left: 378px;
+}
+.blog-content .blog__details_quotes .quotes_text {
+  font-family: "DM Serif Display", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #cda274;
+  padding-top: 144px;
+}
+.blog-content .blog__details_articles .article_list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 19px;
+  margin: 24px 0 44px 0;
+}
+.blog-content .blog__details_articles li::marker {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #cda274;
+}
+.blog-content .blog__details_articles .blog__details_img {
+  margin-bottom: 35px;
+}
+.blog-content .sidebar_title {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  padding-bottom: 24px;
+}
+.blog-content .sidebar__tags {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.blog-content .sidebar__tags_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blog-content .sidebar__tags_block .sidebar__tag_button {
+  border-radius: 10px;
+  border: none;
+  padding: 9px 30px;
+  height: 41px;
+  background: #f4f0ec;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #292f36;
+}
+.blog-content .sidebar__tags_block .sidebar__tag_button:hover {
+  background: #292f36;
+  color: #fff;
+}
+.blog-content .sidebar__tags_block .sidebar__tag_button:active {
+  transform: scale(0.95);
+}
+
+.blog__details_title {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292f36;
+  padding-bottom: 21px;
+}
+
+.blog__details_img {
+  border-radius: 50px;
+}
+
+.blog__details_text {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4d5053;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,149 @@
+.blog-content{
+    margin-top: 200px;
+    margin-bottom: 96px;
+    display: flex;
+    gap: 52px;
+    .blog__details{
+        max-width: 804px;
+        &_sort{
+            .sort__date{
+                margin-top: 47px;
+                margin-bottom: 47px;
+                display: flex;
+                gap: 409px;
+                &_text{
+                    font-family:  $font-family;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0.01em;
+                    text-transform: capitalize;
+                    color: #4d5053;
+                }
+            }
+        }
+        &_quotes{
+            border-radius: 50px;
+            height: 267px;
+            background: #f4f0ec;
+            position: relative;
+            margin-top: 35px;
+            margin-bottom: 27px;
+            .quotes_icon{
+                font-family: $second-family;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 200px;
+                line-height: 125%;
+                letter-spacing: 0.02em;
+                text-align: center;
+                color: #cda274;
+                transform: rotate(180deg);
+                height: 133px;
+                width: 106px;
+                position: absolute;
+                top: 50px;
+                left: 378px;
+            }
+            .quotes_text{
+                font-family: $second-family;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 125%;
+                letter-spacing: 0.02em;
+                text-align: center;
+                color: #cda274;
+                padding-top: 144px;
+            }
+
+        }
+        &_articles{
+           .article_list{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-left: 19px;
+            margin: 24px 0 44px 0;
+           }
+           & li::marker {
+                font-family:$second-family;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 125%;
+                letter-spacing: 0.02em;
+                color: #cda274;
+            }
+            .blog__details_img{
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .sidebar{
+        &_title{
+            font-family: $second-family;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 125%;
+            letter-spacing: 0.02em;
+            color: #292f36;
+            padding-bottom: 24px;
+        }
+        &__tags{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 11px;
+            &_block{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                .sidebar__tag_button{
+                    border-radius: 10px;
+                    border: none;
+                    padding: 9px 30px;
+                    height: 41px;
+                    background: #f4f0ec;
+                    font-family:$font-family;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 125%;
+                    letter-spacing: 0.02em;
+                    text-align: center;
+                    color: #292f36;
+                    &:hover{
+                        background: #292f36;
+                        color: #fff;
+                    }
+                    &:active{
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+ .blog__details_title{
+                font-family: $second-family;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 125%;
+                letter-spacing: 0.02em;
+                color: #292f36;
+                padding-bottom: 21px;
+            }
+.blog__details_img{
+                border-radius: 50px;
+            }
+.blog__details_text{
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 150%;
+                letter-spacing: 0.01em;
+                color: #4d5053;
+            }
