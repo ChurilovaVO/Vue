@@ -31,31 +31,18 @@
             </div>
         </nav>
         <div class="banner" style="background-image: url(/img/banner/blog_details_banner.jpg)"></div>
-        <div class="blog-content center" id="blog-content">
+        <div class="blog-content center" id="blog-details">
             <div class="blog__details">
-                <article class="blog__details_sort">
-                    <h2 class="blog__details_title">
-                        Let’s Get Solution for Building
-Construction Work
-                    </h2>
-                    <img class="blog__details_img" src="img/blog_details/article_1.png" alt="article_1 photo">
-                    <div class="sort__date">
-                        <p class="sort__date_text">26 December,2022</p>
-                        <p class="sort__date_text">Interior / Home / Decore</p>
-                    </div>
-                    <p class="blog__details_text">
-                        Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.
-                    </p>
-                    <br>
-                    <p class="blog__details_text">
-                        Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
-                    </p>
-                </article>
+
+                        
+                <articlecomp v-for="(article,index) in articleList" :key="index" :article="article"></articlecomp>
+                
                 <div class="blog__details_quotes">
                     <h2 class="quotes_icon">“</h2>
                     <div class="quotes_text">
-                        The details are not the details. <br>
-They make the design.
+                        The details are not the details.
+                        <br>
+                        They make the design.
                     </div>
                 </div>
                 <article class="blog__details_articles">
@@ -70,7 +57,7 @@ They make the design.
                         <li class="blog__details_text">Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</li>
                         <li class="blog__details_text">Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</li>
                     </ol>
-                    <img class="blog__details_img" src="img/blog_details/article_2.png" alt="article_2 photo">
+                    <img class="blog__details_img" src="img/blog_details/article_end.png" alt="article_end photo">
                     <p class="blog__details_text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
                 </article>
             </div>
@@ -78,16 +65,16 @@ They make the design.
                 <h4 class="sidebar_title">Tags</h4>
                 <div class="sidebar__tags">
                     <div class="sidebar__tags_block">
-                        <button class="sidebar__tag_button">Kitchen</button>
-                        <button class="sidebar__tag_button">Bedroom</button>
+                        <button @click="sortTagName('kitchen')" class="sidebar__tag_button">Kitchen</button>
+                        <button @click="sortTagName('bedroom')" class="sidebar__tag_button">Bedroom</button>
                     </div>
                     <div class="sidebar__tags_block">
-                        <button class="sidebar__tag_button">Building</button>
-                        <button class="sidebar__tag_button">Architecture</button>
+                        <button @click="sortTagName('building')" class="sidebar__tag_button">Building</button>
+                        <button @click="sortTagName('architecture')" class="sidebar__tag_button">Architecture</button>
                     </div>
                     <div class="sidebar__tags_block">
-                        <button class="sidebar__tag_button">Kitchen Planning</button>
-                        <button class="sidebar__tag_button">Bedroom</button>
+                        <button @click="sortTagName('kitchen planning')" class="sidebar__tag_button">Kitchen Planning</button>
+                        <button @click="sortTagName('bedroom')"  class="sidebar__tag_button">Bedroom</button>
                     </div>
                 </div>
             </div>
@@ -154,59 +141,82 @@ They make the design.
                 <p class="footer__text">(123) 456 - 7890</p>
             </div>
         </div>
-
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="articleComp.js"></script>
         <script>
-             const app2 = {
+            const app2 = {
             data(){
-                return{
-                    listElements: [{
-                        id: 1,
-                        tag: 'Kitchan Design',
-                        img: 'img/blog_news/blog_news_photo_1.png',
-                        subtitle: 'Let’s Get Solution For Building Construction Work',
-                        date: '26 December,2022',
-                    },
-                {
-                        id: 2,
-                        tag: 'Living Design',
-                        img: 'img/blog_news/blog_news_photo_2.png',
-                        subtitle: 'Low Cost Latest Invented Interior Designing Ideas.',
-                        date: '22 December,2022',
-                    },
-                {
-                        id: 3,
-                        tag: 'Interior Design',
-                        img: 'img/blog_news/blog_news_photo_3.png',
-                        subtitle: 'Best For Any Office & Business Interior Solution',
-                        date: '25 December,2022',
-                    },
-                {
-                        id: 4,
-                        tag: 'Kitchan Design',
-                        img: 'img/blog_news/blog_news_photo_4.png',
-                        subtitle: 'Let’s Get Solution For Building Construction Work',
-                        date: '26 December,2022',
-                    },
-                {
-                        id: 5,
-                        tag: 'Living Design',
-                        img: 'img/blog_news/blog_news_photo_5.png',
-                        subtitle: 'Low Cost Latest Invented Interior Designing Ideas.',
-                        date: '22 December,2022',
-                    },
-                {
-                        id: 6,
-                        tag: 'Interior Design',
-                        img: 'img/blog_news/blog_news_photo_6.png',
-                        subtitle: 'Best For Any Office & Business Interior Solution',
-                        date: '25 December,2022',
-                    }]
-                };
-            },
-        }
+                return {
+                    articleList: [
+                        { 
+                            title: 'Let’s Get Solution for Building Construction Work',
+                            tag: 'kitchen',
+                            imgPath: 'img/blog_details/article_1.png',
+                            imgAlt: 'article_1 photo',
+                            date: '26 December,2022',
+                            text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
+                            text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
 
-        Vue.createApp(app2).mount('#blog-content');
+                    },
+                    { 
+                            title: 'Article by tag "bedroom"',
+                            tag: 'bedroom',
+                            imgPath: 'img/blog_details/article_2.png',
+                            imgAlt: 'article_2 photo',
+                            date: '30 December,2023',
+                            text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.',
+                            text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+
+                    },
+                    { 
+                            title: 'Article by tag "Building"',
+                            tag: 'building',
+                            imgPath: 'img/blog_details/article_3.png',
+                            imgAlt: 'article_3 photo',
+                            date: '15 December,2022',
+                            text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
+                            text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                    },
+                     { 
+                            title: 'Article by tag "Architecture"',
+                            tag: 'architecture',
+                            imgPath: 'img/blog_details/article_4.png',
+                            imgAlt: 'article_3 photo',
+                            date: '1 December,2023',
+                            text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.',
+                            text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                    },
+                     { 
+                            title: 'Article by tag "Kitchen Planning"',
+                            tag: 'kitchen planning',
+                            imgPath: 'img/blog_details/article_5.png',
+                            imgAlt: 'article_3 photo',
+                            date: '16 December,2023',
+                            text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.',
+                            text2: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
+                    },
+                ],
+                    
+                }
+            },
+            methods: {
+                sortTagName(tag){
+                    let count = 0;
+                    this.articleList.forEach(article => {
+                        if (article.tag===tag){
+                            this.articleList.splice(count, 1);
+                            this.articleList.splice(0,0,article);
+                        }
+                        count++;
+                    })
+                }
+            },
+            components: {
+                articlecomp,
+            },            
+        };
+
+        Vue.createApp(app2).mount('#blog-details');
         </script>
     </body>
 </html>
