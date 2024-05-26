@@ -1,0 +1,39 @@
+@import 'var';
+
+.counter{
+    background-color: #f4f0ec;
+    height: 457px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 76px;
+    &__item{
+        text-align: center;
+        position: relative;
+        padding-right: 76px;
+        &_number{
+            font-family:$second-family;
+            font-weight: 400;
+            font-size: 85px;
+            line-height: 125%;
+            letter-spacing: 0.02em;
+            color: #cda274;
+        }
+        &_text{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 150%;
+            letter-spacing: 0.01em;
+            color: #4d5053;
+        }
+        &:not(:last-child)::after{
+            content: url("data:image/svg+xml,%3Csvg width='1' height='130' viewBox='0 0 1 130' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.5' y1='2.18557e-08' x2='0.499994' y2='130' stroke='%23CDA274'/%3E%3C/svg%3E%0A");
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+}
