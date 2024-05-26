@@ -18,7 +18,7 @@
                 <router-link to="/blog" class="menubar__link">Blog</router-link>
             </div>
         </nav>
-        <div class="banner" style="background-image: url(@/assets/img/banner/blog_banner.jpg)"></div>
+        <div class="banner" style="background-image: require(url(@/assets/img/banner/blog_banner.jpg))"></div>
         <div class="blog-content center" id="blog-details">
             <div class="blog__details">
 
@@ -141,7 +141,7 @@ export default {
                         { 
                             title: 'Let’s Get Solution for Building Construction Work',
                             tag: 'kitchen',
-                            imgPath: '@/assets/img/blog_details/article_1.png',
+                            imgPath: require('@/assets/img/blog_details/article_1.png'),
                             imgAlt: 'article_1 photo',
                             date: '26 December,2022',
                             text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
@@ -151,7 +151,7 @@ export default {
                     { 
                             title: 'Article by tag "bedroom"',
                             tag: 'bedroom',
-                            imgPath: '@/assets/img/blog_details/article_2.png',
+                            imgPath: require('@/assets/img/blog_details/article_2.png'),
                             imgAlt: 'article_2 photo',
                             date: '30 December,2023',
                             text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.',
@@ -161,7 +161,7 @@ export default {
                     { 
                             title: 'Article by tag "Building"',
                             tag: 'building',
-                            imgPath: '@/assets/img/blog_details/article_3.png',
+                            imgPath: require('@/assets/img/blog_details/article_3.png'),
                             imgAlt: 'article_3 photo',
                             date: '15 December,2022',
                             text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
@@ -170,7 +170,7 @@ export default {
                      { 
                             title: 'Article by tag "Architecture"',
                             tag: 'architecture',
-                            imgPath: '@/assets/img/blog_details/article_4.png',
+                            imgPath: require('@/assets/img/blog_details/article_4.png'),
                             imgAlt: 'article_3 photo',
                             date: '1 December,2023',
                             text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.',
@@ -179,7 +179,7 @@ export default {
                      { 
                             title: 'Article by tag "Kitchen Planning"',
                             tag: 'kitchen planning',
-                            imgPath: '@/assets/img/blog_details/article_5.png',
+                            imgPath: require('@/assets/img/blog_details/article_5.png'),
                             imgAlt: 'article_3 photo',
                             date: '16 December,2023',
                             text1: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.',
