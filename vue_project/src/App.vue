@@ -1,7 +1,5 @@
 <template>
 
-<!-- <ProductDetails/>
- -->
  <!--  <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/blog">Blog</router-link>
@@ -11,10 +9,9 @@
 </template>
 
 <script>
-import ProductDetails from '@/components/ProductDetails.vue'
 
     export default {
-        components: { ProductDetails },
+       
     }
 </script>
 
