@@ -12,12 +12,10 @@ a{
     margin-right: calc(50% - 600px);
 }
 
-@import 'header';
 @import 'banner';
 @import 'project';
 @import 'counter';
 @import 'blog';
-@import 'footer';
 @import 'banner_blog';
 @import 'vueblog';
 @import 'blog_details';
