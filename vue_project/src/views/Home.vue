@@ -170,115 +170,7 @@
                     It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.
                 </p>
             </div>
-            <div class="blog__content">
-                <div class="blog__item">
-                    <div class="blog__element">
-                        <img class="blog__element_img" src="@/assets/img/blog/blog_photo_1.png" alt="blog_photo_1">
-                        <div class="blog__disign">
-                            <h6 class="blog__disign_title">Kitchan Design</h6>
-                        </div>
-                        <div class="blog__element_subcontent">
-                            <h3 class="blog__item_title">Let’s Get Solution For Building Construction Work</h3>
-                            <div class="blog__item_footer">
-                                <p class="blog__item_footer_date">
-                                    26 December,2022
-                                </p>
-                                <button class="blog__item_footer_button">
-                                    <svg
-                                        width="9"
-                                        height="16"
-                                        viewBox="0 0 9 16"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M1.77144 14.9527L7.71429 8.267L1.77144 1.58128"
-                                            stroke="#292F36"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog__item center__item">
-                    <div class="blog__element">
-                        <img class="blog__element_img" src="@/assets/img/blog/blog_photo_2.png" alt="blog_photo_2">
-                        <div class="blog__disign">
-                            <h6 class="blog__disign_title">Living Design</h6>
-                        </div>
-                        <div class="blog__element_subcontent">
-                            <h3 class="blog__item_title">
-                                Low Cost Latest Invented Interior Designing
-                                <br>
-                                Ideas.
-                            </h3>
-                            <div class="blog__item_footer">
-                                <p class="blog__item_footer_date">
-                                    22 December,2022
-                                </p>
-                                <button class="blog__item_footer_button ">
-                                    <svg
-                                        width="9"
-                                        height="16"
-                                        viewBox="0 0 9 16"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M1.77144 14.9527L7.71429 8.267L1.77144 1.58128"
-                                            stroke="#292F36"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog__item">
-                    <div class="blog__element">
-                        <img class="blog__element_img" src="@/assets/img/blog/blog_photo_3.png" alt="blog_photo_3">
-                        <div class="blog__disign">
-                            <h6 class="blog__disign_title">Interior Design</h6>
-                        </div>
-                        <div class="blog__element_subcontent">
-                            <h3 class="blog__item_title">
-                                Best For Any Office & Business Interior
-                                <br>
-                                Solution
-                            </h3>
-                            <div class="blog__item_footer">
-                                <p class="blog__item_footer_date">
-                                    25 December,2022
-                                </p>
-                                <button class="blog__item_footer_button">
-                                    <svg
-                                        width="9"
-                                        height="16"
-                                        viewBox="0 0 9 16"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M1.77144 14.9527L7.71429 8.267L1.77144 1.58128"
-                                            stroke="#292F36"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <BlogItemListComp :showLess="true"/>
         </section>
         <FooterComp/>
  
@@ -287,9 +179,11 @@
 <script>
 import HeaderComp from '@/components/HeaderComp.vue'
 import FooterComp from '@/components/FooterComp.vue'
+import BlogItemListComp from '@/components/BlogItemListComp.vue'
+
 export default {
     components: { 
-        HeaderComp,FooterComp,
+        HeaderComp,FooterComp,BlogItemListComp,
      },
 }
 </script>
