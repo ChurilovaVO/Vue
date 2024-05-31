@@ -1,10 +1,7 @@
 <template>
   <HeaderComp />
   <div class="banner">
-    <div class="banner__heading">
-      <h1 class="banner__heading_title">Articles & News</h1>
-      <h5 class="banner__heading_text">Home / Blog</h5>
-    </div>
+    <HeaderBannerComp :index="0" />
   </div>
   <div class="vueblog center">
     <div class="latest-post">
@@ -91,12 +88,28 @@
 import HeaderComp from "@/components/HeaderComp.vue";
 import FooterComp from "@/components/FooterComp.vue";
 import BlogItemListComp from "@/components/BlogItemListComp.vue";
+import HeaderBannerComp from "@/components/HeaderBannerComp.vue";
 
 export default {
   components: {
     HeaderComp,
+    HeaderBannerComp,
     FooterComp,
     BlogItemListComp,
   },
 };
 </script>
+
+<style lang="scss">
+.banner {
+  background-image: url(@/assets/img/banner/blog_banner.jpg);
+
+  background-repeat: no-repeat;
+  height: 356px;
+  background-position-x: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+</style>

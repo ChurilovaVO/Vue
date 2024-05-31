@@ -6,11 +6,11 @@
   ></div>
   <div class="blog-content center" id="blog-details">
     <div class="blog__details">
-      <ArticleComp
+      <ArticleComponent
         v-for="(article, index) in articleList"
         :key="index"
         :article="article"
-      ></ArticleComp>
+      ></ArticleComponent>
 
       <div class="blog__details_quotes">
         <h2 class="quotes_icon">“</h2>
@@ -89,8 +89,7 @@
 <script>
 import HeaderComp from "@/components/HeaderComp.vue";
 import FooterComp from "@/components/FooterComp.vue";
-import ArticleComp from "@/components/ArticleComp.vue";
-
+import ArticleComponent from "@/components/ArticleComponent.vue";
 export default {
   data() {
     return {
@@ -166,9 +165,9 @@ export default {
     },
   },
   components: {
-    ArticleComp,
     HeaderComp,
     FooterComp,
+    ArticleComponent,
   },
 };
 </script>
