@@ -1,5 +1,5 @@
 <template>
-  <HeaderComp />
+
   <section class="banner__content center">
     <img class="banner__banner" src="@/assets/img/banner/index_banner.png" alt="banner" />
     <div class="banner__info">
@@ -190,18 +190,14 @@
     </div>
     <BlogItemListComp :showLess="true" />
   </section>
-  <FooterComp />
+
 </template>
 
 <script>
-import HeaderComp from "@/components/HeaderComp.vue";
-import FooterComp from "@/components/FooterComp.vue";
 import BlogItemListComp from "@/components/BlogItemListComp.vue";
 
 export default {
   components: {
-    HeaderComp,
-    FooterComp,
     BlogItemListComp,
   },
 };

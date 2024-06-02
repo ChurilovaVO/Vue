@@ -1,5 +1,4 @@
 <template>
-  <HeaderComp />
   <div class="banner">
     <HeaderBannerComp :index="1" />
   </div>
@@ -44,13 +43,9 @@
       </button>
     </div>
   </div>
-
-  <FooterComp />
 </template>
 
 <script>
-import HeaderComp from "@/components/HeaderComp.vue";
-import FooterComp from "@/components/FooterComp.vue";
 import HeaderBannerComp from "@/components/HeaderBannerComp.vue";
 import ProjectListForProjectsView from "@/components/project_items/ProjectListForProjectsView.vue";
 export default {
@@ -60,10 +55,8 @@ export default {
     };
   },
   components: {
-    HeaderComp,
     HeaderBannerComp,
     ProjectListForProjectsView,
-    FooterComp,
   },
   methods: {
     sortProjectsOfType(sortType) {
@@ -81,7 +74,6 @@ export default {
 }
 
 .projects {
-  margin: 200px 0px 200px 0px;
   display: flex;
   flex-direction: column;
   gap: 61px;

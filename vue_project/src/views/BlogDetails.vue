@@ -1,5 +1,4 @@
 <template>
-  <HeaderComp />
   <div
     class="banner"
     style="background-image: require(url(@/assets/img/banner/blog_banner.jpg))"
@@ -83,12 +82,9 @@
       </div>
     </div>
   </div>
-  <FooterComp />
 </template>
 
 <script>
-import HeaderComp from "@/components/HeaderComp.vue";
-import FooterComp from "@/components/FooterComp.vue";
 import ArticleComponent from "@/components/ArticleComponent.vue";
 export default {
   data() {
@@ -165,8 +161,6 @@ export default {
     },
   },
   components: {
-    HeaderComp,
-    FooterComp,
     ArticleComponent,
   },
 };

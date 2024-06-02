@@ -1,5 +1,4 @@
 <template>
-  <HeaderComp />
   <div class="banner">
     <HeaderBannerComp :index="0" />
   </div>
@@ -81,20 +80,15 @@
       </div>
     </div>
   </div>
-  <FooterComp />
 </template>
 
 <script>
-import HeaderComp from "@/components/HeaderComp.vue";
-import FooterComp from "@/components/FooterComp.vue";
 import BlogItemListComp from "@/components/BlogItemListComp.vue";
 import HeaderBannerComp from "@/components/HeaderBannerComp.vue";
 
 export default {
   components: {
-    HeaderComp,
     HeaderBannerComp,
-    FooterComp,
     BlogItemListComp,
   },
 };
@@ -111,5 +105,6 @@ export default {
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin-bottom: 200px;
 }
 </style>
