@@ -23,15 +23,15 @@
       >
         <swiper-slide>
           <div class="swiper-zoom-container">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <img src="@/assets/img/project/projectDetail/slider/slider_1.png" />
           </div> </swiper-slide
         ><swiper-slide>
           <div class="swiper-zoom-container">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <img src="@/assets/img/project/projectDetail/slider/slider_2.png" />
           </div> </swiper-slide
         ><swiper-slide>
           <div class="swiper-zoom-container">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <img src="@/assets/img/project/projectDetail/slider/slider_3.png" />
           </div>
         </swiper-slide>
       </swiper>
@@ -42,7 +42,7 @@
 <script>
 import { mapState } from "vuex";
 // Import Swiper Vue.js components
-/* import { Swiper, SwiperSlide } from "swiper/vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
 import "swiper/css";
@@ -51,16 +51,14 @@ import "swiper/css/zoom";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import "./style.css";
-
 // import required modules
 import { Zoom, Navigation, Pagination } from "swiper/modules";
- */
+
 export default {
   computed: {
     ...mapState(["projectDetailTitle", "projectDetailText1", "projectDetailText2"]),
   },
-  /*  components: {
+  components: {
     Swiper,
     SwiperSlide,
   },
@@ -68,7 +66,7 @@ export default {
     return {
       modules: [Zoom, Navigation, Pagination],
     };
-  }, */
+  },
 };
 </script>
 
@@ -99,6 +97,10 @@ export default {
     letter-spacing: 0.01em;
     color: #4d5053;
   }
+}
+
+.project-details__slider {
+  margin-bottom: 200px;
 }
 
 #app {

@@ -6,23 +6,21 @@
         <h4 class="subcontent__info_title">{{ projectItem.title }}</h4>
         <p class="subcontent__info_text">{{ projectItem.category }}</p>
       </div>
-      <router-link to="/project/project_details"
-        ><button class="subcontent__button">
-          <svg
-            width="10"
-            height="20"
-            viewBox="0 0 10 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1 19L9 10L1 1"
-              stroke="#292F36"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg></button
+      <router-link to="/project/project_details" class="subcontent__button">
+        <svg
+          width="10"
+          height="20"
+          viewBox="0 0 10 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 19L9 10L1 1"
+            stroke="#292F36"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
       ></router-link>
     </div>
   </div>
@@ -86,6 +84,9 @@ export default {
   width: 70px;
   height: 70px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background-color: $colorSite;
   }
