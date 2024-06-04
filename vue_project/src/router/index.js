@@ -4,6 +4,7 @@ import Blog from '../views/Blog.vue'
 import BlogDetails from '../views/BlogDetails.vue'
 import Project from '../views/Project.vue'
 import ProjectDetails from '../views/ProjectDetails.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/project/project_details',
     name: 'project_details',
     component: ProjectDetails
+  },
+  {
+    path: '/:CatchAll(.*)',
+    name: 'not_found',
+    component: NotFound
   }
 ]
 

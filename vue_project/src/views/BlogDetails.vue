@@ -82,10 +82,13 @@
       </div>
     </div>
   </div>
+  <FooterComp />
 </template>
 
 <script>
 import ArticleComponent from "@/components/ArticleComponent.vue";
+import FooterComp from "@/components/FooterComp.vue";
+
 export default {
   data() {
     return {
@@ -162,6 +165,7 @@ export default {
   },
   components: {
     ArticleComponent,
+    FooterComp,
   },
 };
 </script>

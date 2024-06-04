@@ -37,6 +37,7 @@
       </swiper>
     </div>
   </div>
+  <FooterComp />
 </template>
 
 <script>
@@ -53,6 +54,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Zoom, Navigation, Pagination } from "swiper/modules";
+import FooterComp from "@/components/FooterComp.vue";
 
 export default {
   computed: {
@@ -61,6 +63,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    FooterComp,
   },
   setup() {
     return {

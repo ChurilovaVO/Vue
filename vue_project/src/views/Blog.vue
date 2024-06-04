@@ -26,10 +26,7 @@
           </div>
           <div class="latest-post__content_date">
             <p class="latest-post__date_text">26 December,2022</p>
-            <button
-              class="latest-post__date_button"
-              @click="$router.push('blog_details')"
-            >
+            <router-link to="/blog_details" class="latest-post__date_button">
               <svg
                 width="9"
                 height="17"
@@ -45,8 +42,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <router-link to="/blog_details"></router-link>
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -80,16 +76,19 @@
       </div>
     </div>
   </div>
+  <FooterComp />
 </template>
 
 <script>
 import BlogItemListComp from "@/components/BlogItemListComp.vue";
 import HeaderBannerComp from "@/components/HeaderBannerComp.vue";
+import FooterComp from "@/components/FooterComp.vue";
 
 export default {
   components: {
     HeaderBannerComp,
     BlogItemListComp,
+    FooterComp,
   },
 };
 </script>

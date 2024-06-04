@@ -43,11 +43,14 @@
       </button>
     </div>
   </div>
+  <FooterComp />
 </template>
 
 <script>
 import HeaderBannerComp from "@/components/HeaderBannerComp.vue";
 import ProjectListForProjectsView from "@/components/project_items/ProjectListForProjectsView.vue";
+import FooterComp from "@/components/FooterComp.vue";
+
 export default {
   data() {
     return {
@@ -57,6 +60,7 @@ export default {
   components: {
     HeaderBannerComp,
     ProjectListForProjectsView,
+    FooterComp,
   },
   methods: {
     sortProjectsOfType(sortType) {

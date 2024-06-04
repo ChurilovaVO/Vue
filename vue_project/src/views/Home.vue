@@ -1,5 +1,4 @@
 <template>
-
   <section class="banner__content center">
     <img class="banner__banner" src="@/assets/img/banner/index_banner.png" alt="banner" />
     <div class="banner__info">
@@ -7,7 +6,7 @@
       <p class="banner__info_text">
         There are many variations of the passages of lorem Ipsum fromavailable, majority.
       </p>
-      <button class="banner__info_button">
+      <router-link to="/project" class="banner__info_button">
         Get Started
         <svg
           width="18"
@@ -24,7 +23,7 @@
             stroke-linejoin="round"
           />
         </svg>
-      </button>
+      </router-link>
     </div>
   </section>
   <section class="project center">
@@ -190,15 +189,17 @@
     </div>
     <BlogItemListComp :showLess="true" />
   </section>
-
+  <FooterComp />
 </template>
 
 <script>
 import BlogItemListComp from "@/components/BlogItemListComp.vue";
+import FooterComp from "@/components/FooterComp.vue";
 
 export default {
   components: {
     BlogItemListComp,
+    FooterComp,
   },
 };
 </script>

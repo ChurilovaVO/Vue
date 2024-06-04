@@ -71,6 +71,9 @@
                     width: 52px;
                     border: none;
                     height: 52px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     &:hover{
                         background-color: $colorSite; 
                     }   
@@ -105,6 +108,8 @@
    
 }
 .pagination{
+    margin-bottom: 200px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
